@@ -1,0 +1,32 @@
+{% extends "base.html"%}
+
+{%block content%}
+<body>
+    <div>
+        <form method="post">
+            <label>이미지 사이즈 조정</label>
+            <input name="image_length" placeholder="길이">
+            <button type="submit">저장</button>
+    
+            
+        
+        </form>
+
+
+    </div>
+    <div>
+        <img src="{{url_for('static', filename='refine_images/3.jpg')}}" alt="이미지 파일 불러오는 중...">
+        <img src="{{url_for('static', filename='refine_images/4.jpg')}}" alt="이미지 파일 불러오는 중...">
+        <img src="{{url_for('static', filename='refine_images/5.jpg')}}" alt="이미지 파일 불러오는 중...">
+        <br>
+        <img src="{{url_for('static', filename='refine_images/6.jpg')}}" alt="이미지 파일 불러오는 중...">
+        <img src="{{url_for('static', filename='refine_images/7.jpg')}}" alt="이미지 파일 불러오는 중...">
+        <img src="{{url_for('static', filename='refine_images/8.jpg')}}" alt="이미지 파일 불러오는 중...">
+
+    </div>
+    
+
+
+
+</body>
+{%endblock%}

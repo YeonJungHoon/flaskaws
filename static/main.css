@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    position: relative;
+}
+.dropdown-content a:hover{
+    display: block;
+    
+
+}
+
+.dropdown-content a{
+    color: blueviolet;
+    display: none;
+    text-decoration: none;
+    display: none;
+}
+.dropdown-content a:hover {background-color: rgb(74, 67, 67);}
+
+.dropdown:hover .dropdown-content a{display: block; overflow: visible; z-index: 100;}
+
+

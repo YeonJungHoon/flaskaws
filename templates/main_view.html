@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{%block content%}
+
+<body>
+
+    <div>
+        
+        {% for file in files%}
+            <img src="static/refine_images/{{file}}" alt="이미지를 로드중입니다...">
+        {% endfor %}
+    </div>
+
+</body>
+
+
+
+
+
+
+
+
+{%endblock%}
+

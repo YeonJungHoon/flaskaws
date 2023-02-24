@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="static/main.css">
+<link rel="stylesheet" href="static/bootstrap.css">
+<link rel="stylesheet" href="static/bootstrap.min.css">
+{% extends "base.html" %}
+{%block content %}
+<body>
+
+   
+    <div>
+        <form method="POST"  action="/pinterest">
+            <label for="search_pin" >가져올 이미지 파일 검색: </label>
+            <input type="text" id="search_pin" name="search_pin">
+            <label for="num_pin">이미지 개수: </label>
+            <input type="number" id="num_pin" name="num_pin">
+
+    
+            <button type="submit" >검색하기</button>
+        </form>
+    
+    
+    </div>
+    <div>
+        <img src="{{url_for('static', filename='img/3.jpg')}}" alt="이미지 파일 불러오는 중...">
+        <img src="{{url_for('static', filename='img/4.jpg')}}" alt="이미지 파일 불러오는 중...">
+        <img src="{{url_for('static', filename='img/5.jpg')}}" alt="이미지 파일 불러오는 중...">
+        <br>
+        <img src="{{url_for('static', filename='img/6.jpg')}}" alt="이미지 파일 불러오는 중...">
+        <img src="{{url_for('static', filename='img/7.jpg')}}" alt="이미지 파일 불러오는 중...">
+        <img src="{{url_for('static', filename='img/8.jpg')}}" alt="이미지 파일 불러오는 중...">
+
+    </div>
+
+</body>
+{% endblock %}

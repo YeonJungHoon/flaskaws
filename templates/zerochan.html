@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="static/main.css">
+{% extends "base.html" %}
+{%block content %}
+<body>
+
+   
+    <div>
+        <form method="POST"  action="/zerochan">
+            <label for="search" >가져올 이미지 파일 검색: </label>
+            <input type="text" id="search" name="search">
+            <label for="num">이미지 개수: </label>
+            <input type="number" id="num" name="num">
+    
+            <button type="submit" >검색하기</button>
+        </form>
+    
+    
+    </div>
+    <div>
+        <img src="{{url_for('static', filename='img/3.jpg')}}" alt="이미지 파일 불러오는 중...">
+        <img src="{{url_for('static', filename='img/4.jpg')}}" alt="이미지 파일 불러오는 중...">
+        <img src="{{url_for('static', filename='img/5.jpg')}}" alt="이미지 파일 불러오는 중...">
+        <br>
+        <img src="{{url_for('static', filename='img/6.jpg')}}" alt="이미지 파일 불러오는 중...">
+        <img src="{{url_for('static', filename='img/7.jpg')}}" alt="이미지 파일 불러오는 중...">
+        <img src="{{url_for('static', filename='img/8.jpg')}}" alt="이미지 파일 불러오는 중...">
+    </div>
+    
+
+</body>
+{% endblock %}

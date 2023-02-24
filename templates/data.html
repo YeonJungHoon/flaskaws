@@ -1,0 +1,15 @@
+{% extends "base.html"%}
+{% block content%}
+<body>
+
+    {% if querys %}
+        <ol>
+            {%for query in querys%}
+                <li>{{query.data}}</li>
+            {% endfor%}
+        </ol>
+    {%endif%}
+
+
+</body>
+{% endblock%}
